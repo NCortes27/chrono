@@ -66,8 +66,8 @@ void ChElementBeamIGA::SetNodesCubic(std::shared_ptr<ChNodeFEAxyzrot> nodeA,
     mvars.push_back(&nodes[3]->Variables());
     Kmatr.SetVariables(mvars);
 
-    int_order_s = 1;
-    int_order_b = 1;
+    int_order_s = 2;
+    int_order_b = 2;
 }
 
 void ChElementBeamIGA::SetNodesGenericOrder(std::vector<std::shared_ptr<ChNodeFEAxyzrot>> mynodes,
