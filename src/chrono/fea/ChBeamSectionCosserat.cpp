@@ -302,7 +302,8 @@ void ChElasticityCosseratAdvancedGenericFPM::ComputeTransformMatrix() {
 
     // In case the shear axis is rotated:
     ChMatrix33<> RotShearA;
-    RotShearA.Set_A_Rxyz(ChVector<>(this->beta, 0, 0));
+    //RotShearA.Set_A_Rxyz(ChVector<>(this->beta, 0, 0));
+    RotShearA.Set_A_Rxyz(ChVector<>(0, 0, this->beta));
 
     ChMatrixNM<double, 6, 6> RotA;
     RotA.setZero();
